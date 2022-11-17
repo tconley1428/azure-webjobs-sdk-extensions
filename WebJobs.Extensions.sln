@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31529.145
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1118E0AD-83C8-4B67-859B-FCDEF54338C1}"
 EndProject
@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions.Twilio",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions.CosmosDB", "src\WebJobs.Extensions.CosmosDB\WebJobs.Extensions.CosmosDB.csproj", "{A0DE3BF4-AD56-44D9-8404-8E0778AE5CA0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions.CosmosDB.Mongo", "src\WebJobs.Extensions.CosmosDB.Mongo\WebJobs.Extensions.CosmosDB.Mongo.csproj", "{1E4A68B3-A96C-495B-A40F-2FF840546D22}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions.CosmosDB.Tests", "test\WebJobs.Extensions.CosmosDB.Tests\WebJobs.Extensions.CosmosDB.Tests.csproj", "{0FFB6F9E-B187-4707-9FCD-EEF314116DFB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions.Tests.Common", "test\WebJobs.Extensions.Tests.Common\WebJobs.Extensions.Tests.Common.csproj", "{D86272BE-7A41-4E45-8E13-79CC7E252899}"
@@ -48,6 +50,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions.Timers.Storage", "src\WebJobs.Extensions.Timers.Storage\WebJobs.Extensions.Timers.Storage.csproj", "{F2614016-394C-4A9E-8251-43BFD4B48A90}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Extensions.Timers.Storage.Tests", "test\WebJobs.Extensions.Timers.Storage.Tests\WebJobs.Extensions.Timers.Storage.Tests.csproj", "{2B9EF1F1-EEDA-46D5-A832-401A9A9999E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJobs.Extensions.CosmosDB.ChangeProcessor", "src\WebJobs.Extensions.CosmosDB.ChangeProcessor\WebJobs.Extensions.CosmosDB.ChangeProcessor.csproj", "{D64B02A2-8EBA-4AD9-9FE8-93251165EDDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJobs.Extensions.CosmosDB.ChangeProcessor.Tests", "test\WebJobs.Extensions.CosmosDb.ChangeProcessor.Tests\WebJobs.Extensions.CosmosDB.ChangeProcessor.Tests.csproj", "{CF8D3504-F471-4E59-B7CC-653F7112673E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJobs.Extensions.CosmosDB.Mongo.Tests", "test\WebJobs.Extensions.CosmosDB.Mongo.Tests\WebJobs.Extensions.CosmosDB.Mongo.Tests.csproj", "{FE8804E6-3158-4485-A8B9-448CF1CCA1CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +95,10 @@ Global
 		{A0DE3BF4-AD56-44D9-8404-8E0778AE5CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0DE3BF4-AD56-44D9-8404-8E0778AE5CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0DE3BF4-AD56-44D9-8404-8E0778AE5CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4A68B3-A96C-495B-A40F-2FF840546D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4A68B3-A96C-495B-A40F-2FF840546D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4A68B3-A96C-495B-A40F-2FF840546D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4A68B3-A96C-495B-A40F-2FF840546D22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0FFB6F9E-B187-4707-9FCD-EEF314116DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FFB6F9E-B187-4707-9FCD-EEF314116DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FFB6F9E-B187-4707-9FCD-EEF314116DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -119,6 +131,18 @@ Global
 		{2B9EF1F1-EEDA-46D5-A832-401A9A9999E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B9EF1F1-EEDA-46D5-A832-401A9A9999E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B9EF1F1-EEDA-46D5-A832-401A9A9999E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D64B02A2-8EBA-4AD9-9FE8-93251165EDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D64B02A2-8EBA-4AD9-9FE8-93251165EDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D64B02A2-8EBA-4AD9-9FE8-93251165EDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D64B02A2-8EBA-4AD9-9FE8-93251165EDDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8D3504-F471-4E59-B7CC-653F7112673E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8D3504-F471-4E59-B7CC-653F7112673E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8D3504-F471-4E59-B7CC-653F7112673E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8D3504-F471-4E59-B7CC-653F7112673E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8804E6-3158-4485-A8B9-448CF1CCA1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8804E6-3158-4485-A8B9-448CF1CCA1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8804E6-3158-4485-A8B9-448CF1CCA1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8804E6-3158-4485-A8B9-448CF1CCA1CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +156,7 @@ Global
 		{4B1CA665-5F3E-4A0A-BEFC-FC174BB1BABA} = {1118E0AD-83C8-4B67-859B-FCDEF54338C1}
 		{4F335FB9-2BE8-4B51-9CE9-01465CCF05CB} = {1118E0AD-83C8-4B67-859B-FCDEF54338C1}
 		{A0DE3BF4-AD56-44D9-8404-8E0778AE5CA0} = {1118E0AD-83C8-4B67-859B-FCDEF54338C1}
+		{1E4A68B3-A96C-495B-A40F-2FF840546D22} = {1118E0AD-83C8-4B67-859B-FCDEF54338C1}
 		{0FFB6F9E-B187-4707-9FCD-EEF314116DFB} = {6D6CF06F-EFCF-4E01-99F1-CB7991C279D8}
 		{D86272BE-7A41-4E45-8E13-79CC7E252899} = {6D6CF06F-EFCF-4E01-99F1-CB7991C279D8}
 		{5A130772-4916-4631-AC07-ED4812F898C7} = {6D6CF06F-EFCF-4E01-99F1-CB7991C279D8}
@@ -140,6 +165,9 @@ Global
 		{587D158D-D719-42EF-AE81-70E2E8142B46} = {6D6CF06F-EFCF-4E01-99F1-CB7991C279D8}
 		{F2614016-394C-4A9E-8251-43BFD4B48A90} = {1118E0AD-83C8-4B67-859B-FCDEF54338C1}
 		{2B9EF1F1-EEDA-46D5-A832-401A9A9999E7} = {6D6CF06F-EFCF-4E01-99F1-CB7991C279D8}
+		{D64B02A2-8EBA-4AD9-9FE8-93251165EDDC} = {1118E0AD-83C8-4B67-859B-FCDEF54338C1}
+		{CF8D3504-F471-4E59-B7CC-653F7112673E} = {6D6CF06F-EFCF-4E01-99F1-CB7991C279D8}
+		{FE8804E6-3158-4485-A8B9-448CF1CCA1CB} = {6D6CF06F-EFCF-4E01-99F1-CB7991C279D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {821EF04F-5408-46AD-94ED-0E939B89D4B8}
